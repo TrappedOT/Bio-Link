@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trappy Wappy</title>
+    <link rel="shortcut icon" href="src/images/favicon.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/mouse-animate/main.css">
+    <script src="src/mouse-animate/main.js"></script>
+    <style>
+        .profile-avatar {
+            overflow: hidden;
+            border-radius: 50%;
+            border: 5px solid #000000; 
+            width: 80px; 
+            height: 80px; 
+            margin-top: -15px; 
+        }
+
+        .profile-avatar img {
+            width: 100%;
+            height: auto;
+        }
+        
+        
+        .circular-text-background {
+            display: inline-block;
+            background-color: #000000;
+            padding: 8px;
+            border-radius: 50%;
+            filter: drop-shadow(4px 4px 5px #000000); 
+            margin-top: 3px; 
+        }
+
+        .text-highlight {
+            color: #ffffff;
+            background-image: url('https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif');
+            filter: drop-shadow(8px 8px 10px #ffffff);
+            margin-left: 20px;
+        }
+
+        .typewrite {
+            color: #ffffff;
+            filter: drop-shadow(8px 8px 10px #ffffff); 
+            margin-left: 20px; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="enter">
+        <a class="enterButton" href="javascript:enterSite()">Enter Site</a>
+    </div>
+    <div id="loading-screen">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+    <div class="wrap" rel="preload">
+        <div class="main-block">
+            <div class="profile unselectable">
+                <div class="profile-banner unselectable"></div>
+                <div class="profile-avatar unselectable">
+                    <!-- Smaller Circular Profile Picture -->
+                    <img class="w-44 h-44 rounded-full mx-auto shadow-avatar"
+                        src="https://cdn.discordapp.com/attachments/1174263540706721822/1200628353871388772/e4S90yTE_400x400.jpg"
+                        title="Image" alt="Image" draggable="false" />
+                </div>
+                <!-- Move h2 and typewrite outside of profile-avatar div -->
+                <h2 class="text-[20px] text-white font-semibold text-highlight">
+                    Trappy Wappy
+                </h2>
+                <span class="typewrite" data-period="2000" data-type='[ "&ldquo;Don&rsquo;t React, Act.&rdquo;"]'>
+                    <span class="wrap"></span>
+                </span>
+            </div>
+            <div class="social-tab">
+                <div class="links-block">
+                    <div class="social-tab">
+                        <div class="links-block">
+                            <a target="_blank" href="https://twitter.com/TrapyWapy"><img src="src/images/social/twitter.png"
+                                    class="unselectable"></a>
+                            <a target="_blank" href="https://cash.app/$trappedxrdg"><img src="src/images/social/cashapp.png"
+                                    class="unselectable"></a>
+                            <a target="_blank" href="https://github.com/TrappedOT/"><img src="src/images/social/github.png"
+                                    class="unselectable"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="not-last-child:mb-8">
+        <div class="flex justify-center items-center space-x-2">
+            <!-- Smaller Circular Text Background -->
+            <div class="circular-text-background">
+                <h2 class="text-[16px] text-white font-semibold" style="color: #000;">
+                    Trappy Wappy
+                </h2>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/jquery-3.6.0.js"></script>
+    <script src="src/js/loading.js"></script>
+</body>
+
+</html>
